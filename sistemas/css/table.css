@@ -1,0 +1,75 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
+table {
+	font-size: 18px;
+	margin-left: auto;
+    margin-right: auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+	border: 5px
+    
+   
+}
+
+td, th {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 13px;
+}
+
+h2{
+	font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+table#tbl tr:nth-child(even) {
+    background-color: #eee	;
+}
+table#tbl tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+
+
+/*	Responsividade */
+
+@media (max-width: 1000px) {
+
+
+    header h1{
+        float: none;
+    }
+
+    header a{
+        margin-top: 25px;
+        float: none;
+    }
+
+}
+
+.main-content{
+    margin-bottom: 75px;
+}
+
+
+@media (max-width: 1200px) {
+	#bsaHolder{ display:none;}
+}
+
+
+.tz-link{
+	text-decoration: none;
+	color: #fff !important;
+	font: bold 36px Arial,Helvetica,sans-serif !important;
+}
+
+.tz-link span{
+	color: #da431c;
+}

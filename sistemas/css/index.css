@@ -1,0 +1,191 @@
+html{
+   background-color: #22568F;
+   
+}
+
+.formulario{
+    max-width: 640px;
+    margin: 30px auto;
+    padding: 55px;
+    box-sizing: border-box;
+    background-color:  #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    font: bold 14px sans-serif;
+    text-align: center;
+	
+}
+
+.formulario .form-row{
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.formulario .form-title-row{
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.formulario h1{
+    display: inline-block;
+    box-sizing: border-box;
+    color:  #4c565e;
+    font-size: 24px;
+    padding: 0 10px 15px;
+    border-bottom: 2px solid #6caee0;
+    margin: 0;
+}
+
+.formulario .form-row > label span{
+    display: inline-block;
+    box-sizing: border-box;
+    color: #5F5F5F;
+    width: 180px;
+    text-align: right;
+    vertical-align: top;
+    padding: 12px 25px;
+}
+
+.formulario input{
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+}
+
+.formulario input[type=radio],
+.formulario input[type=checkbox]{
+    box-shadow: none;
+    width: auto;
+}
+
+.formulario input[type=checkbox]{
+    margin-top: 13px;
+}
+
+.formulario select{
+    background-color: #ffffff;
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    max-width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 8px;
+    border: 1px solid #dbdbdb;
+}
+
+
+.formulario .form-radio-buttons{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.formulario .form-radio-buttons > div{
+    margin-top: 10px;
+}
+
+.formulario .form-radio-buttons label span{
+    margin-left: 8px;
+    color: #5f5f5f;
+    font-weight: normal;
+}
+
+.formulario .form-radio-buttons input{
+    width: auto;
+}
+
+.formulario button{
+    display: block;
+    border-radius: 2px;
+    background-color:  #22568F;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+    margin: 40px 183px 0;
+}
+
+.formulario button:hover{
+    background-color:  #6caee0;
+}
+
+
+/*	Responsividade */
+
+@media (max-width: 600px) {
+
+    .formulario{
+        padding: 30px;
+        max-width: 480px;
+    }
+
+    .formulario .form-row{
+        max-width: 300px;
+        margin: 25px auto;
+        text-align: left;
+    }
+
+    .formulario .form-title-row{
+        margin-bottom: 50px;
+    }
+
+    .formulario .form-row > label span{
+        display: block;
+        text-align: left;
+        padding: 0 0 15px;
+    }
+
+    .formulario select{
+        width: 240px;
+    }
+
+    .formulario input[type=checkbox]{
+        margin-top:0;
+    }
+
+    .formulario .form-radio-buttons > div{
+        margin: 0 0 10px;
+    }
+
+    .formulario button{
+        margin: 0;
+    }
+
+}
+
+
+
+@media (max-width: 1000px) {
+
+
+    header h1{
+        float: none;
+    }
+
+    header a{
+        margin-top: 25px;
+        float: none;
+    }
+
+}
+
+.main-content{
+    margin-bottom: 75px;
+}
+
+
+@media (max-width: 1200px) {
+	#bsaHolder{ display:none;}
+}
+
+
+.tz-link{
+	text-decoration: none;
+	color: #fff !important;
+	font: bold 36px Arial,Helvetica,sans-serif !important;
+}
+
+.tz-link span{
+	color: #da431c;
+}

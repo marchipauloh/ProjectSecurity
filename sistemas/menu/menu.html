@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Meta tag-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Java Script -->
+        <script type="text/javascript" src="../js/navbar.js"></script>
+        <script type="text/javascript" src="../js/mascaraData.js"></script>
+		<script type="text/javascript" src="../js/piegraph.js"></script>
+		<script type="text/javascript" src="../js/linechart.js"></script>
+		
+		<!-- CSS -->
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="stylesheet" href="../css/index.css">
+		
+		<!-- Icone -->
+        <link rel="icon" href="../icon/favicon.ico" />
+
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+ 
+		
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+	  
+	  google.charts.load('current', {'packages':['line', 'corechart']});
+      google.charts.setOnLoadCallback(drawChart2);
+    </script>
+
+
+	<title>Cadastro de Estoque</title>
+
+    </head>
+	 
+    <header class="clearfix">
+    <div class="container">
+            <div class="header-left">
+                <h1> Controle de Estoque</h1>
+            </div>
+            <div class="header-right">
+                <label for="open">
+                    <span class="hidden-desktop"></span>
+                </label>
+                <input type="checkbox" name="" id="open">
+				
+                <nav>
+					<a href="menu.html">Home</a>
+                    <a href="estoque.html">Estoque</a>
+                    <a href="entrada-insumos.html">Entrada</a>
+                    <a href="saida-insumos.html">Saida</a>
+					<a href="cadastro-usuario.html">Usuarios</a>
+					<a href="cadastro-cliente.html">Clientes</a>
+                    <a href="../form_login/login.html">Logout</a>              
+                </nav>
+            </div>
+        </div>
+    </header>
+	<body>
+	<!--
+	 <div class="main-content">
+    </div>
+	<div id = "container" style = "width: 550px; height: 400px; margin: 0 auto"></div>
+    <div id="piechart" style="float: right; "></div>
+	<div id="chart_div"></div>
+	-->
+
+    </body>
+
+</html>

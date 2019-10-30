@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <head>
+            <!-- Meta tag-->
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <!-- Resources -->
+            <script type="text/javascript" src="js/navbar.js"></script>
+            <script type="text/javascript" src="js/mascaraTel.js"></script>
+            <link rel="stylesheet" href="css/navbar.css">
+            <link rel="stylesheet" href="css/cadastro.css">
+                 <link rel="icon" href="icon/favicon.ico" />
+
+            <title>Cadastro</title>
+
+        </head>
+
+  <div class="main-content">
+        <div class="logo">
+            <img src="img/logo.png"/>
+        </div>
+        <div class="main-content">
+
+            <form class="formulario" method="post" action="#">
+
+                <div class="form-title-row">
+                    <h1>Cadastro de Usuario</h1>
+                </div>
+
+                <div class="form-row">
+                    <label>
+                        <span>Nome</span>
+                        <input type="text" name="name" required  placeholder="Digite seu nome">
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <label>
+                        <span>Sobrenome</span>
+                        <input type="text" name="name" required placeholder="Digite seu sobrenome">
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" required placeholder="Digite seu e-mail">
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <label>
+                        <span>Gênero</span>
+                        <select name="dropdown">
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+
+                        </select>
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <label>
+                        <span>Celular</span>
+                        <input type="text" class="form-control" id="inputcelular" name="inputCelular" onkeypress="formataTelefone(inputCelular);" placeholder="(DD) 9 9999-9999" maxlength="15" required >
+                    </label>
+                </div>
+
+
+
+                <div class="form-row">
+                    <button type="submit">Efetuar cadastro</button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </body>
+
+</html>

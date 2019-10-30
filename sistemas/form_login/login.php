@@ -42,7 +42,7 @@ $connect = mysqli_connect("127.0.0.1","root","","segurancaDB");
         }else{
           $_SESSION['email'] = $email;
           //setcookie("email",$email);
-          header("Location:../menu/menu.php");
+          header("Location:../menu/menu.html");
         }
     }
   }

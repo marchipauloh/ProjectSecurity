@@ -1,13 +1,70 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title> Login de Usuário </title>
-</head>
-<body>
-<form method="POST" action="login.php">
-<label>Email:</label><input type="text" name="email" id="email"><br>
-<label>Senha:</label><input type="password" name="senha" id="senha"><br>
-<input type="submit" value="entrar" id="entrar" name="entrar"><br>
-<a href="../form_cadastro/cadastro.html">Cadastre-se</a>
-</form>
-</body>
+
+    <head>
+
+        <!-- Meta tag-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Resources -->
+        <script type="text/javascript" src="../js/navbar.js"></script>
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="icon" href="../icon/favicon.ico" />
+
+        <title>Login</title>
+
+    </head>
+
+    <div class="main-content">
+        <div class="logo">
+            <img src="../img/logo.png" />
+        </div>
+
+        <form class="form-login" method="POST" action="login.php">
+
+            <div class="formulario">
+
+                <div class="form-fundo">
+
+                    <div class="form-title-row">
+                        <h1>Login</h1>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Email</span>
+                            <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Senha</span>
+                            <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                       <button type="submit" id="entrar" name="entrar">Login</button>
+
+                    </div>
+
+                    <div class="form-title-row">
+                        <a href="../form_cadastro/cadastro.html">Cadastre-se</a>
+                    </div>             
+
+                </div>
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+    </body>
+
 </html>

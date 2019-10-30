@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!-- Meta tag-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Resources -->
+        <script type="text/javascript" src="js/navbar.js"></script>
+        <script type="text/javascript" src="js/mascaraData.js"></script>
+        <script type="text/javascript" src="js/mascaraCpf.js"></script>
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" href="icon/favicon.ico" />
+
+        <title>Requisição de estoque</title>
+
+    </head>
+
+    <header class="clearfix">
+    <div class="container">
+            <div class="header-left">
+                <h1> Controle de Estoque</h1>
+            </div>
+            <div class="header-right">
+                <label for="open">
+                    <span class="hidden-desktop"></span>
+                </label>
+                <input type="checkbox" name="" id="open">
+                <nav>
+					<a href="index.html">Home</a>
+                    <a href="estoque.html">Estoque</a>
+                    <a href="entrada-insumos.html">Entrada</a>
+                    <a href="saida-insumos.html">Saida</a>
+					<a href="cadastro-usuario.html">Usuarios</a>
+					<a href="cadastro-cliente.html">Clientes</a>
+                    <a href="login.html">Logout</a>            
+                </nav>
+            </div>
+        </div>
+    </header>
+<section class="clearfix">
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <div class="main-content">
+
+
+        <form class="formulario" method="post" action="#">
+
+            <div class="form-title-row">
+                <h1>Requisição de Insumos</h1>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Codigo do Item</span>
+                    <input type="text" name="codigo" required  placeholder="Digite o código do item">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Modelo</span>
+                    <input type="text" name="descricao" required placeholder="Digite o modelo">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Quantidade</span>
+                    <input type="qtde" name="qtde" required placeholder="Quantidade">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Fornecedor</span>
+                    <input type="fornecedor" name="fornecedor" placeholder="Nome do fornecedor">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Data de saída</span>
+                    <input type="text" name="outra_data" id="outra_data" maxlength="10" onkeypress="mascaraData(this)" placeholder="DD/MM/AAAA" />
+                </label>
+            </div>
+
+
+            <div class="form-row">
+                <label>
+                    <span>Tipo</span>
+                    <select name="dropdown">
+                        <option>LT</option>
+                        <option>UN</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Requisitado por</span>
+                    <select name="dropdown">
+                        <option>aandrade</option>
+                        <option>phmarchi</option>
+                        <option>rcsiqueira</option>
+
+                    </select>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>CPF Cliente</span>
+                    <input type='text' name='cpfcliente' onkeypress='mascara(this,cpf)' onblur='clearTimeout()' maxlength="14">
+                </label>
+            </div>
+
+
+
+            <div class="form-row">
+                <button type="submit">Efetuar cadastro</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    </body>
+
+</html>
